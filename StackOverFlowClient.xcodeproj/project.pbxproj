@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7954388E1A93E95300255A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7954388D1A93E95300255A7F /* main.m */; };
+		795438911A93E95300255A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 795438901A93E95300255A7F /* AppDelegate.m */; };
+		795438941A93E95300255A7F /* StackOverFlowClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 795438921A93E95300255A7F /* StackOverFlowClient.xcdatamodeld */; };
+		795438971A93E95300255A7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795438961A93E95300255A7F /* ViewController.m */; };
+		7954389A1A93E95300255A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795438981A93E95300255A7F /* Main.storyboard */; };
+		7954389C1A93E95300255A7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7954389B1A93E95300255A7F /* Images.xcassets */; };
+		7954389F1A93E95300255A7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7954389D1A93E95300255A7F /* LaunchScreen.xib */; };
+		795438AB1A93E95400255A7F /* StackOverFlowClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795438AA1A93E95400255A7F /* StackOverFlowClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		795438A51A93E95400255A7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 795438801A93E95300255A7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 795438871A93E95300255A7F;
+			remoteInfo = StackOverFlowClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		795438881A93E95300255A7F /* StackOverFlowClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverFlowClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7954388C1A93E95300255A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7954388D1A93E95300255A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7954388F1A93E95300255A7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		795438901A93E95300255A7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		795438931A93E95300255A7F /* StackOverFlowClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StackOverFlowClient.xcdatamodel; sourceTree = "<group>"; };
+		795438951A93E95300255A7F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		795438961A93E95300255A7F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		795438991A93E95300255A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7954389B1A93E95300255A7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7954389E1A93E95300255A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		795438A41A93E95400255A7F /* StackOverFlowClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverFlowClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		795438A91A93E95400255A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		795438AA1A93E95400255A7F /* StackOverFlowClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverFlowClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		795438851A93E95300255A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795438A11A93E95400255A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7954387F1A93E95300255A7F = {
+			isa = PBXGroup;
+			children = (
+				7954388A1A93E95300255A7F /* StackOverFlowClient */,
+				795438A71A93E95400255A7F /* StackOverFlowClientTests */,
+				795438891A93E95300255A7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		795438891A93E95300255A7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				795438881A93E95300255A7F /* StackOverFlowClient.app */,
+				795438A41A93E95400255A7F /* StackOverFlowClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7954388A1A93E95300255A7F /* StackOverFlowClient */ = {
+			isa = PBXGroup;
+			children = (
+				7954388F1A93E95300255A7F /* AppDelegate.h */,
+				795438901A93E95300255A7F /* AppDelegate.m */,
+				795438951A93E95300255A7F /* ViewController.h */,
+				795438961A93E95300255A7F /* ViewController.m */,
+				795438981A93E95300255A7F /* Main.storyboard */,
+				7954389B1A93E95300255A7F /* Images.xcassets */,
+				7954389D1A93E95300255A7F /* LaunchScreen.xib */,
+				795438921A93E95300255A7F /* StackOverFlowClient.xcdatamodeld */,
+				7954388B1A93E95300255A7F /* Supporting Files */,
+			);
+			path = StackOverFlowClient;
+			sourceTree = "<group>";
+		};
+		7954388B1A93E95300255A7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7954388C1A93E95300255A7F /* Info.plist */,
+				7954388D1A93E95300255A7F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		795438A71A93E95400255A7F /* StackOverFlowClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				795438AA1A93E95400255A7F /* StackOverFlowClientTests.m */,
+				795438A81A93E95400255A7F /* Supporting Files */,
+			);
+			path = StackOverFlowClientTests;
+			sourceTree = "<group>";
+		};
+		795438A81A93E95400255A7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				795438A91A93E95400255A7F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		795438871A93E95300255A7F /* StackOverFlowClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795438AE1A93E95400255A7F /* Build configuration list for PBXNativeTarget "StackOverFlowClient" */;
+			buildPhases = (
+				795438841A93E95300255A7F /* Sources */,
+				795438851A93E95300255A7F /* Frameworks */,
+				795438861A93E95300255A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackOverFlowClient;
+			productName = StackOverFlowClient;
+			productReference = 795438881A93E95300255A7F /* StackOverFlowClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		795438A31A93E95400255A7F /* StackOverFlowClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795438B11A93E95400255A7F /* Build configuration list for PBXNativeTarget "StackOverFlowClientTests" */;
+			buildPhases = (
+				795438A01A93E95400255A7F /* Sources */,
+				795438A11A93E95400255A7F /* Frameworks */,
+				795438A21A93E95400255A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				795438A61A93E95400255A7F /* PBXTargetDependency */,
+			);
+			name = StackOverFlowClientTests;
+			productName = StackOverFlowClientTests;
+			productReference = 795438A41A93E95400255A7F /* StackOverFlowClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		795438801A93E95300255A7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Up Early, LLC";
+				TargetAttributes = {
+					795438871A93E95300255A7F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					795438A31A93E95400255A7F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 795438871A93E95300255A7F;
+					};
+				};
+			};
+			buildConfigurationList = 795438831A93E95300255A7F /* Build configuration list for PBXProject "StackOverFlowClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7954387F1A93E95300255A7F;
+			productRefGroup = 795438891A93E95300255A7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				795438871A93E95300255A7F /* StackOverFlowClient */,
+				795438A31A93E95400255A7F /* StackOverFlowClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		795438861A93E95300255A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7954389A1A93E95300255A7F /* Main.storyboard in Resources */,
+				7954389F1A93E95300255A7F /* LaunchScreen.xib in Resources */,
+				7954389C1A93E95300255A7F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795438A21A93E95400255A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		795438841A93E95300255A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795438941A93E95300255A7F /* StackOverFlowClient.xcdatamodeld in Sources */,
+				795438911A93E95300255A7F /* AppDelegate.m in Sources */,
+				795438971A93E95300255A7F /* ViewController.m in Sources */,
+				7954388E1A93E95300255A7F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795438A01A93E95400255A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795438AB1A93E95400255A7F /* StackOverFlowClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		795438A61A93E95400255A7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 795438871A93E95300255A7F /* StackOverFlowClient */;
+			targetProxy = 795438A51A93E95400255A7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		795438981A93E95300255A7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				795438991A93E95300255A7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7954389D1A93E95300255A7F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7954389E1A93E95300255A7F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		795438AC1A93E95400255A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		795438AD1A93E95400255A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		795438AF1A93E95400255A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StackOverFlowClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		795438B01A93E95400255A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StackOverFlowClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		795438B21A93E95400255A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StackOverFlowClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverFlowClient.app/StackOverFlowClient";
+			};
+			name = Debug;
+		};
+		795438B31A93E95400255A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StackOverFlowClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverFlowClient.app/StackOverFlowClient";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		795438831A93E95300255A7F /* Build configuration list for PBXProject "StackOverFlowClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795438AC1A93E95400255A7F /* Debug */,
+				795438AD1A93E95400255A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		795438AE1A93E95400255A7F /* Build configuration list for PBXNativeTarget "StackOverFlowClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795438AF1A93E95400255A7F /* Debug */,
+				795438B01A93E95400255A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		795438B11A93E95400255A7F /* Build configuration list for PBXNativeTarget "StackOverFlowClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795438B21A93E95400255A7F /* Debug */,
+				795438B31A93E95400255A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		795438921A93E95300255A7F /* StackOverFlowClient.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				795438931A93E95300255A7F /* StackOverFlowClient.xcdatamodel */,
+			);
+			currentVersion = 795438931A93E95300255A7F /* StackOverFlowClient.xcdatamodel */;
+			path = StackOverFlowClient.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 795438801A93E95300255A7F /* Project object */;
+}
