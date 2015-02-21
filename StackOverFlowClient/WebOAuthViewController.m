@@ -23,7 +23,7 @@
   [self.view addSubview:webView];
   webView.navigationDelegate = self;
   
-  NSString *urlString = @"https://stackexchange.com/oauth/dialog?client_id=3197&scope=no_expiry&redirect_uri=https://stackexchange.com/oauth/login_success";
+  NSString *urlString = @"https://stackexchange.com/oauth/dialog?client_id=4308&scope=no_expiry&redirect_uri=https://stackexchange.com/oauth/login_success";
   NSURL *url = [NSURL URLWithString:urlString];
   [webView loadRequest:[NSURLRequest requestWithURL:url]];
 }

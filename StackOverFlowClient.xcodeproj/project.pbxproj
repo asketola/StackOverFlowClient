@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		794D47EB1A9931E500EA17A6 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 794D47EA1A9931E500EA17A6 /* Profile.m */; };
 		7954388E1A93E95300255A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7954388D1A93E95300255A7F /* main.m */; };
 		795438911A93E95300255A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 795438901A93E95300255A7F /* AppDelegate.m */; };
 		795438941A93E95300255A7F /* StackOverFlowClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 795438921A93E95300255A7F /* StackOverFlowClient.xcdatamodeld */; };
@@ -23,7 +24,7 @@
 		795438CB1A93F8C800255A7F /* WebOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795438CA1A93F8C800255A7F /* WebOAuthViewController.m */; };
 		795438CE1A93F90600255A7F /* StackOverFlowService.m in Sources */ = {isa = PBXBuildFile; fileRef = 795438CD1A93F90600255A7F /* StackOverFlowService.m */; };
 		795438EC1A95548700255A7F /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 795438EB1A95548700255A7F /* burger.png */; };
-		796487571A9566A7003D329D /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796487561A9566A7003D329D /* ProfileViewController.m */; };
+		796487571A9566A7003D329D /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796487561A9566A7003D329D /* ProfileViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		794D47E91A9931E500EA17A6 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		794D47EA1A9931E500EA17A6 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
 		795438881A93E95300255A7F /* StackOverFlowClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverFlowClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7954388C1A93E95300255A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7954388D1A93E95300255A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		795438EB1A95548700255A7F /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
 		796487551A9566A7003D329D /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		796487561A9566A7003D329D /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		796487581A9590B4003D329D /* MenuPressedDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuPressedDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				796487561A9566A7003D329D /* ProfileViewController.m */,
 				795438C61A93F88000255A7F /* Question.h */,
 				795438C71A93F88000255A7F /* Question.m */,
+				794D47E91A9931E500EA17A6 /* Profile.h */,
+				794D47EA1A9931E500EA17A6 /* Profile.m */,
 				795438C91A93F8C800255A7F /* WebOAuthViewController.h */,
 				795438CA1A93F8C800255A7F /* WebOAuthViewController.m */,
 				795438CC1A93F90600255A7F /* StackOverFlowService.h */,
@@ -128,6 +134,7 @@
 				795438C41A93F81200255A7F /* QuestionCell.m */,
 				795438C01A93F72000255A7F /* MenuTableViewController.h */,
 				795438C11A93F72000255A7F /* MenuTableViewController.m */,
+				796487581A9590B4003D329D /* MenuPressedDelegate.h */,
 				795438BD1A93F6BC00255A7F /* BurgerContainerController.h */,
 				795438BE1A93F6BC00255A7F /* BurgerContainerController.m */,
 				7954389B1A93E95300255A7F /* Images.xcassets */,
@@ -274,6 +281,7 @@
 				795438911A93E95300255A7F /* AppDelegate.m in Sources */,
 				795438971A93E95300255A7F /* ViewController.m in Sources */,
 				795438C81A93F88000255A7F /* Question.m in Sources */,
+				794D47EB1A9931E500EA17A6 /* Profile.m in Sources */,
 				795438CB1A93F8C800255A7F /* WebOAuthViewController.m in Sources */,
 				795438C21A93F72000255A7F /* MenuTableViewController.m in Sources */,
 				796487571A9566A7003D329D /* ProfileViewController.m in Sources */,

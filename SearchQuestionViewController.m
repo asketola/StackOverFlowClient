@@ -7,8 +7,14 @@
 //
 
 #import "SearchQuestionViewController.h"
+#import "StackOverFlowService.h"
+#import "Question.h"
+#import "QuestionCell.h"
 
-@interface SearchQuestionViewController ()
+@interface SearchQuestionViewController () <UISearchBarDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (strong, nonatomic) NSArray *questions;
 
 @end
 
@@ -16,22 +22,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  self.searchBar.delegate = self;
+  self.tableView.dataSource = self;
+  self.tableView.rowHeight = UITableViewAutomaticDimension;
+  self.tableView.pagingEnabled = true;
+  
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+  
+  [[StackOverFlowService sharedService] fetchQuestionWithSearchTerm:searchBar.text completionHandler:^(NSArray *results, NSString *error) {
+    self.questions = results;
+    if (error) {
+      
+    }
+    [self.tableView reloadData];
+  }];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  return self.questions.count;
 }
-*/
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  QuestionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"QUESTION_CELL" forIndexPath:indexPath];
+  cell.avatarImage.image = nil;
+  Question *question = self.questions[indexPath.row];
+  cell.questionResultsText.text = question.title;
+  if (!question.image) {
+    [[StackOverFlowService sharedService] fetchUserImage:question.avatarURL completionHandler:^(UIImage *image) {
+      question.image = image;
+      cell.avatarImage.image = image;
+    }];
+  } else {
+    cell.avatarImage.image = question.image;
+  }
+  return cell;
+}
 
 @end

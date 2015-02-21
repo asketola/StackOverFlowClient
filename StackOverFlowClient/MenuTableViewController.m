@@ -24,6 +24,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  [[self tableView] setEstimatedRowHeight:44];
+  
+  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,6 +45,11 @@
     [self presentViewController:webOAuthController animated:true completion:^{
     }];
   }
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  [self.delegate menuOptionSelected:indexPath.row];
 }
 
 #pragma mark - Table view data source
