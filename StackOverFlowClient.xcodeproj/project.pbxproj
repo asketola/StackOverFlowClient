@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		794728421A99A1DC0034F493 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794728411A99A1DC0034F493 /* UserViewController.m */; };
 		794D47EB1A9931E500EA17A6 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 794D47EA1A9931E500EA17A6 /* Profile.m */; };
 		7954388E1A93E95300255A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7954388D1A93E95300255A7F /* main.m */; };
 		795438911A93E95300255A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 795438901A93E95300255A7F /* AppDelegate.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		794728401A99A1DC0034F493 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserViewController.h; path = ../UserViewController.h; sourceTree = "<group>"; };
+		794728411A99A1DC0034F493 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserViewController.m; path = ../UserViewController.m; sourceTree = "<group>"; };
 		794D47E91A9931E500EA17A6 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
 		794D47EA1A9931E500EA17A6 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
 		795438881A93E95300255A7F /* StackOverFlowClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverFlowClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +125,8 @@
 				795438981A93E95300255A7F /* Main.storyboard */,
 				796487551A9566A7003D329D /* ProfileViewController.h */,
 				796487561A9566A7003D329D /* ProfileViewController.m */,
+				794728401A99A1DC0034F493 /* UserViewController.h */,
+				794728411A99A1DC0034F493 /* UserViewController.m */,
 				795438C61A93F88000255A7F /* Question.h */,
 				795438C71A93F88000255A7F /* Question.m */,
 				794D47E91A9931E500EA17A6 /* Profile.h */,
@@ -280,6 +285,7 @@
 				795438BF1A93F6BC00255A7F /* BurgerContainerController.m in Sources */,
 				795438911A93E95300255A7F /* AppDelegate.m in Sources */,
 				795438971A93E95300255A7F /* ViewController.m in Sources */,
+				794728421A99A1DC0034F493 /* UserViewController.m in Sources */,
 				795438C81A93F88000255A7F /* Question.m in Sources */,
 				794D47EB1A9931E500EA17A6 /* Profile.m in Sources */,
 				795438CB1A93F8C800255A7F /* WebOAuthViewController.m in Sources */,

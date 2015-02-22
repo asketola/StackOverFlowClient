@@ -12,53 +12,25 @@
 
 @interface ProfileViewController () <UIScrollViewDelegate>
 @property (retain, nonatomic) UIScrollView *scrollView;
-@property (retain, nonatomic) IBOutlet UILabel *userNameLabel;
-@property (retain, nonatomic) IBOutlet UIImageView *userAvatarImage;
-@property (retain, nonatomic) IBOutlet UITextView *userDescriptionTextView;
-@property (retain, nonatomic) IBOutlet UILabel *websiteLabel;
-@property (retain, nonatomic) IBOutlet UILabel *locationLabel;
-@property (retain, nonatomic) IBOutlet UILabel *memberForLabel;
-@property (retain, nonatomic) IBOutlet UILabel *visitedLabel;
-@property (retain, nonatomic) IBOutlet UILabel *seenLabel;
-@property (retain, nonatomic) IBOutlet UILabel *profileLabel;
-@property (retain, nonatomic) IBOutlet UILabel *emailLabel;
-@property (retain, nonatomic) IBOutlet UILabel *realNameLabel;
+@property (assign, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (assign, nonatomic) IBOutlet UIImageView *userAvatarImage;
+@property (assign, nonatomic) IBOutlet UILabel *websiteLabel;
+@property (assign, nonatomic) IBOutlet UILabel *locationLabel;
+@property (assign, nonatomic) IBOutlet UILabel *ageLabel;
+@property (assign, nonatomic) IBOutlet UILabel *bronzeLabel;
+@property (assign, nonatomic) IBOutlet UILabel *silverLabel;
+@property (assign, nonatomic) IBOutlet UILabel *goldLabel;
+@property (assign, nonatomic) IBOutlet UILabel *reputationLabel;
+
+@property (retain, nonatomic) NSArray *userProfile;
+@property (retain, nonatomic) Profile *myProfile;
 
 @end
 
 @implementation ProfileViewController
 
 - (void)viewDidLoad {
-  
-  
-//  _userNameLabel.text = Profile.userName;
-  _userDescriptionTextView.text = @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
-  _websiteLabel.text = @"www.yahoo.com";
-  _locationLabel.text = @"Seattle";
-  _memberForLabel.text = @"Feb 2014";
-  _visitedLabel.text = @"12 hours";
-  _seenLabel.text = @"20 hours ago";
-  _profileLabel.text = @"20";
-  _emailLabel.text = @"myemail@gmail.com";
-  _realNameLabel.text = @"Anne Ketola";
-  
-  // _userAvatarImage.image =
-//  _userNameLabel.text = @"asketola";
-//  _userDescriptionTextView.text = @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
-//  _websiteLabel.text = @"www.yahoo.com";
-//  _locationLabel.text = @"Seattle";
-//  _memberForLabel.text = @"Feb 2014";
-//  _visitedLabel.text = @"12 hours";
-//  _seenLabel.text = @"20 hours ago";
-//  _profileLabel.text = @"20";
-//  _emailLabel.text = @"myemail@gmail.com";
-//  _realNameLabel.text = @"Anne Ketola";
-//  
-//  // _userAvatarImage.image =
-  
-  
-  
-    [super viewDidLoad];
+  [super viewDidLoad];
   self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
   self.scrollView.contentSize = CGSizeMake(2000, 2000);
   [self.view addSubview:self.scrollView];
@@ -68,8 +40,38 @@
   [self.scrollView addSubview:textField];
   [textField release];
   self.scrollView.delegate = self;
-    // Do any additional setup after loading the view.
-}
+  
+  [[StackOverFlowService sharedService] fetchProfile:^(NSArray *fetchedUserProfileResults, NSString *error) {
+    self.userProfile = fetchedUserProfileResults;
+    self.myProfile = self.userProfile.lastObject;
+
+    self.userNameLabel.text = self.myProfile.userName;
+    self.websiteLabel.text = self.myProfile.website;
+    self.locationLabel.text = self.myProfile.location;
+    if (self.myProfile.age != nil) {
+    NSString *ageNtoS = [NSString stringWithFormat: @"%@", [self.myProfile.age stringValue]];
+          self.ageLabel.text = ageNtoS;
+    } else {
+      self.ageLabel.text = @"";
+    }
+    
+    NSString *reputationNtoS = [NSString stringWithFormat: @"%@", [self.myProfile.reputation stringValue]];
+    NSString *bronzeNtoS = [NSString stringWithFormat: @"%@", [self.myProfile.bronze stringValue]];
+    NSString *silverNtoS = [NSString stringWithFormat: @"%@", [self.myProfile.silver stringValue]];
+    NSString *goldNtoS = [NSString stringWithFormat: @"%@", [self.myProfile.gold stringValue]];
+    
+    
+    self.reputationLabel.text = reputationNtoS;
+    self.bronzeLabel.text = bronzeNtoS;
+    self.silverLabel.text = silverNtoS;
+    self.goldLabel.text = goldNtoS;
+    
+    [[StackOverFlowService sharedService] fetchUserImage:self.myProfile.avatarURL completionHandler:^(UIImage *image) {
+      self.userAvatarImage.image = image;
+    }];
+  }];
+
+} // <- close ViewDidLoad
 
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {

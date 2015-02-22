@@ -12,10 +12,12 @@
 
 +(NSArray *)profileFromJson:(NSData *)jsconProfileData {
   
+  NSLog(@"json parsing array is fired");
+  
   NSError *error;
   NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:jsconProfileData options:0 error:&error];
   if (error) {
-    NSLog(@"%@", error.localizedDescription);
+    NSLog(@"Error is %@", error.localizedDescription);
     return nil;
   }
   
@@ -26,20 +28,30 @@
   for (NSDictionary *item in items) {
     Profile *profile = [[Profile alloc] init];
     profile.userName = item[@"display_name"];
-    NSDictionary *userInfo = item[@"user"];
-    profile.website = userInfo[@"website_url"];
-    profile.location = userInfo[@"location"];
-    profile.age = userInfo[@"age"];
-    profile.profileViews = userInfo[@"view_count"];
-    profile.questionCount = userInfo[@"question_count"];
-    profile.answerCount = userInfo[@"answer_count"];
-    profile.reputation = userInfo[@"reputation"];
-    profile.avatarURL = userInfo[@"profile_image"];
-    profile.userDescription = userInfo[@"about_me"];
-
+    profile.website = item[@"website_url"];
+    profile.location = item[@"location"];
+    profile.age = item[@"age"];
+    profile.reputation = item[@"reputation"];
+    profile.avatarURL = item[@"profile_image"];
+    NSDictionary *badges = item[@"badge_counts"];
+    profile.bronze = badges[@"bronze"];
+    profile.silver = badges[@"silver"];
+    profile.gold = badges[@"gold"];
+    
+    NSLog(@"userName: %@", profile.userName);
+    NSLog(@"website: %@", profile.website);
+    NSLog(@"location: %@", profile.location);
+    NSLog(@"age: %@", profile.age);
+    NSLog(@"reputation: %@", profile.reputation);
+    NSLog(@"avatarURL: %@", profile.avatarURL);
+    NSLog(@"bronze: %@", profile.bronze);
+    NSLog(@"silver: %@", profile.silver);
+    NSLog(@"gold: %@", profile.gold);
+ 
     [temp addObject:profile];
   }
   NSArray *final = [[NSArray alloc] initWithArray:temp];
+  NSLog(@"final array: %@", final);
   return final;
 }
 

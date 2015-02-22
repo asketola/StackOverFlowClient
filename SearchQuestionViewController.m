@@ -10,6 +10,7 @@
 #import "StackOverFlowService.h"
 #import "Question.h"
 #import "QuestionCell.h"
+#import "UserViewController.h"
 
 @interface SearchQuestionViewController () <UISearchBarDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -59,6 +60,16 @@
     cell.avatarImage.image = question.image;
   }
   return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([segue.identifier isEqualToString:@"SHOW_USER_PROFILE"]) {
+    UserViewController *destinationVC = segue.destinationViewController;
+    NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+    Question *question = self.questions[indexPath.row];
+    self.selectedUser = question.userID;
+//    destinationVC.selectedUser = self.selectedUser; // <- no idea why this doesn't work
+  }
 }
 
 @end

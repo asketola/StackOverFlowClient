@@ -14,22 +14,14 @@
 
 @property (strong, nonatomic) NSString *website;
 @property (strong, nonatomic) NSString *location;
-@property (strong, nonatomic) NSString *age;
-@property (strong, nonatomic) NSString *profileViews;
-@property (strong, nonatomic) NSString *questionCount;
-@property (strong, nonatomic) NSString *answerCount;
-@property (strong, nonatomic) NSString *reputation;
+@property (strong, nonatomic) NSNumber *age;
+@property (strong, nonatomic) NSNumber *reputation;
 @property (strong, nonatomic) NSString *userName;
 @property (strong, nonatomic) NSString *avatarURL;
 @property (strong, nonatomic) UIImage *userAvatar;
-@property (strong, nonatomic) NSString *userDescription;
-
-
-
-
-
-
-
+@property (strong, nonatomic) NSNumber *bronze;
+@property (strong, nonatomic) NSNumber *silver;
+@property (strong, nonatomic) NSNumber *gold;
 
 
 @end

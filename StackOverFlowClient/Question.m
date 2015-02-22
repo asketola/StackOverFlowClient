@@ -28,6 +28,11 @@
     question.title = item[@"title"];
     NSDictionary *userInfo = item[@"owner"];
     question.avatarURL = userInfo[@"profile_image"];
+    question.userName = userInfo[@"display_name"];
+    question.userID = userInfo[@"user_id"];
+    
+//    NSLog(@"userName: %@", question.userName);
+//    NSLog(@"userID: %@", question.userID);
     
     [temp addObject:question];
   }

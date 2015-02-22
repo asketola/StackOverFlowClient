@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SearchQuestionViewController : UIViewController
+@property (strong, nonatomic) NSNumber *selectedUser;
+
 
 @end
